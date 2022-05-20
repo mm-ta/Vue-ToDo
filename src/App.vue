@@ -25,19 +25,19 @@ export default {
       {
         id: 1,
         text: 'Learn Vue.js',
-        day: 'May 20th at 07:00am',
+        time: 'May 20th at 07:00am',
         reminder: true,
       },
       {
         id: 2,
         text: 'Meeting at office',
-        day: 'May 24th at 04:00pm',
+        time: 'May 24th at 04:00pm',
         reminder: true,
       },
       {
         id: 3,
         text: 'Buy Coffee',
-        day: 'May 31st at 08:00pm',
+        time: 'May 31st at 08:00pm',
         reminder: false,
       },
     ]
