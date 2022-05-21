@@ -17,18 +17,6 @@
       "text": "Buy Coffee",
       "time": "May 31st at 08:00pm",
       "reminder": false
-    },
-    {
-      "id": 4,
-      "text": "go somewhere",
-      "time": "today",
-      "reminder": true
-    },
-    {
-      "id": 5,
-      "text": "come here",
-      "time": "tomorrow",
-      "reminder": false
     }
   ]
 }
