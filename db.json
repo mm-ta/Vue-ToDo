@@ -4,19 +4,19 @@
       "id": 1,
       "text": "Learn Vue",
       "time": "May 20th at 07:00am",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
       "text": "Meeting at office",
       "time": "May 24th at 04:00pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
       "text": "Buy Coffee",
       "time": "May 31st at 08:00pm",
-      "reminder": false
+      "reminder": true
     }
   ]
 }

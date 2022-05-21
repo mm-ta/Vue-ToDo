@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button 
+    <Button v-show="atHome"
       @btn-clicked="$emit('changeMode')"
       :text="createMode ? 'Cancel' : 'Add Task'" 
       :color="createMode ? 'red' : 'green'"
@@ -17,6 +17,14 @@
     props: {
       title: String,
       createMode: Boolean,
+    },
+    computed: {
+      atHome() {
+        if (this.$route.path === '/') {
+          return true
+        }
+        return false;
+      }
     },
     components: {
       Button,
