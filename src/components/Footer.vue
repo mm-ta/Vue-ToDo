@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Mohammad Mahdi Taheri &copy; 2022 </p>
-    <a href="/about">About us</a>
+    <router-link to="/about">About me</router-link>
   </footer>
 </template>
 
