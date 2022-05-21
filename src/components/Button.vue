@@ -1,6 +1,6 @@
 <template>
   <button 
-    @click="onClick()" 
+    @click="$emit('btn-clicked')" 
     :style="{ background: color }" 
     class="btn">
     {{ text }}
@@ -14,10 +14,6 @@
       text: String,
       color: String
     },
-    methods: {
-      onClick() {
-        console.log('clicked me')
-      }
-    }
+    emits: ['btn-clicked']
   }
 </script>
