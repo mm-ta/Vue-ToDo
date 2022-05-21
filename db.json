@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Learn Vue",
+      "time": "May 20th at 07:00am",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Meeting at office",
+      "time": "May 24th at 04:00pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Buy Coffee",
+      "time": "May 31st at 08:00pm",
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "go somewhere",
+      "time": "today",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "come here",
+      "time": "tomorrow",
+      "reminder": false
+    }
+  ]
+}
