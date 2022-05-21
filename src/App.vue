@@ -3,7 +3,7 @@
     <Header 
       :createMode="mode"
       @change-mode="toggleMode" 
-      title="Task Tracker" 
+      title="ToDo app" 
     />
     <router-view :mode="mode"></router-view>
     <Footer />
