@@ -1,4 +1,4 @@
-# vu-task-list
+# Vue-Todo App
 
 ## Project setup
 ```
