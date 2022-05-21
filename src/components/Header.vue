@@ -1,7 +1,11 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button text="Add Task" color="DarkSlateGrey"/>
+    <Button 
+      @btn-clicked="$emit('changeMode')"
+      :text="createMode ? 'Cancel' : 'Add Task'" 
+      :color="createMode ? 'red' : 'green'"
+    />
   </header>
 </template>
 
@@ -11,11 +15,13 @@
   export default {
     name: 'Header',
     props: {
-      title: String
+      title: String,
+      createMode: Boolean,
     },
     components: {
       Button,
-    }
+    },
+    emits: ['changeMode']
   }
 </script>
 
