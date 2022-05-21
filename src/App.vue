@@ -40,34 +40,37 @@ export default {
       ? {...task, reminder: ! task.reminder} 
       : {...task});
     },
-    addTask(newTask) {
-      this.tasks.push(newTask);
+    async addTask(newTask) {
+      const res = await fetch('api/tasks', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify(newTask)
+      });
+
+      const data = await res.json();
+      
+      this.tasks.push(data);
     },
     toggleMode() {
       this.mode = ! this.mode;
+    },
+    async fetchTasks() {
+      const res = await fetch('api/tasks');
+      const data = await res.json();
+      
+      return data;
+    },
+    async fetchTask(id) {
+      const res = await fetch(`api/tasks/${id}`);
+      const data = await res.json();
+
+      return data;
     }
   },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: 'Learn Vue.js',
-        time: 'May 20th at 07:00am',
-        reminder: true,
-      },
-      {
-        id: 2,
-        text: 'Meeting at office',
-        time: 'May 24th at 04:00pm',
-        reminder: true,
-      },
-      {
-        id: 3,
-        text: 'Buy Coffee',
-        time: 'May 31st at 08:00pm',
-        reminder: false,
-      },
-    ]
+  async created() {
+    this.tasks = await this.fetchTasks();
   },
 }
 </script>
