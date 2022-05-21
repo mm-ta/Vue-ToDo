@@ -31,6 +31,8 @@
   }
   .task.reminder {
     border-left: 5px solid green;
+    border-right: 5px solid green;
+    background: rgb(223, 231, 223)
   }
   .task h3 {
     display: flex;
