@@ -47,13 +47,12 @@
         }
 
         const newTask = {
-          id: Math.floor(Math.random() * 1000000),
+          // id: Math.floor(Math.random() * 1000000),
           text: this.text,
           time: this.time,
           reminder: this.reminder,
         }
-
-        // console.log(newTask);
+        
         this.$emit('add-task', newTask);
 
         this.text = '';
